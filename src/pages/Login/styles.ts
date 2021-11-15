@@ -1,16 +1,12 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100vw;
-  height: 70vh;
-  margin: 30px;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  column-gap: 20px;
-
-  @media (max-width: 700px) {
-    grid-template-columns: 1fr;
-  }
+  width: 800px;
+  height: 80vh;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
 `;
 
 export const LoginBoxContainer = styled.div`
@@ -18,4 +14,14 @@ export const LoginBoxContainer = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
+`;
+
+export const LoginHeader = styled.header`
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  padding: 15px;
+  margin: 10px auto;
+  background: #e7d2cc;
 `;

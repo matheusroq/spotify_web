@@ -4,12 +4,10 @@ import * as Style from './styles';
 export const Login = (): JSX.Element => {
   return (
     <Style.Container>
-      <div>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio
-        laudantium dolorem ut architecto reiciendis commodi odit delectus
-        aliquid laborum incidunt perferendis ullam soluta omnis velit, ad
-        obcaecati repellat quasi illo!
-      </div>
+      <Style.LoginHeader>
+        <strong> spotify web app</strong>
+      </Style.LoginHeader>
+
       <Style.LoginBoxContainer>
         <LoginCard />
       </Style.LoginBoxContainer>
