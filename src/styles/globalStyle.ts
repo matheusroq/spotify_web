@@ -9,7 +9,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: #EEEDE7;
+    background: #4E4F50;
     overflow: hidden;
   }
 `;
