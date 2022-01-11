@@ -1,19 +1,16 @@
 import { useEffect, useState } from 'react';
 import axios from '../utils/axios';
-interface Props {
-  code: string;
-}
 
-export const useAuth = (props: Props): string => {
+export const useAuth = (code: string): string => {
   const [accessToken, setAccessToken] = useState('');
   useEffect(() => {
     axios
       .post('/auth', {
-        code: props.code,
+        code,
       })
       .then((res) => setAccessToken(res.data.access_token))
       .catch((err) => console.log(err));
-  }, [props.code]);
+  }, [code]);
 
   return accessToken;
 };
